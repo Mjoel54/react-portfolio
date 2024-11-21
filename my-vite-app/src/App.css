@@ -1,47 +1,9 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  --primary: #022F40;
-  --secondary: #9FAF90;
-  --light: #FFF1D0;
-  --accent: #F08700;
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  --primary: #022f40;
+  --secondary: #9faf90;
+  --light: #fff1d0;
+  --accent: #f08700;
+  width: 100%;
 }
 
 header {
@@ -49,13 +11,23 @@ header {
   position: fixed; /* Keeps the header fixed at the top */
   top: 0; /* Positions the header at the top */
   left: 0; /* Ensures it starts from the left edge */
-  background-color: #022F40; /* Example background color */
+  background-color: #022f40; /* Example background color */
   color: white; /* Example text color */
   /* padding: 10px 20px; Optional padding for aesthetics */
   z-index: 1000; /* Ensures the header is above other content */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
 }
 
-/* header h1 {
-  color: var(--light);
+/* .nav-link {
+  font-weight: bold;
 } */
+
+#aboutMe ul {
+  text-align: left;
+}
+
+#aboutMe {
+  width: 100%;
+  background-color: var(--light);
+  padding: 20px;
+}
