@@ -38,3 +38,19 @@ main {
   text-align: left;
   background-color: var(--light);
 }
+
+footer {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px 0 30px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer div {
+  margin: 0;
+  padding: 0;
+}
