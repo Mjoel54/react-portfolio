@@ -7,6 +7,12 @@
   width: 100%;
 }
 
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 header {
   width: 100%; /* Full width of the page */
   position: fixed; /* Keeps the header fixed at the top */
@@ -19,10 +25,6 @@ header {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
   height: var(--header-height);
 }
-
-/* .nav-link {
-  font-weight: bold;
-} */
 
 #aboutMe ul {
   text-align: left;
@@ -51,4 +53,251 @@ footer {
 footer div {
   margin: 0;
   padding: 0;
+}
+
+/* ------------ Portfolio Styling ------------ */
+
+/* brand color palette */
+:root {
+  --primary: #08032d;
+  --secondary: #dda15e;
+  --tertiary: #08032d;
+  --dark: #08032d;
+  --light: #fefae0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--primary);
+  background-color: var(--light);
+  line-height: 1.5;
+}
+
+main {
+  margin-bottom: 45px;
+}
+
+.hero-banner {
+  background: rgb(68, 88, 120);
+  background-image: url("./images/hero-ricardo-gomez-angel-GsZLXA4JPcM-unsplash.jpg"),
+    linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 15vh;
+  color: var(--light);
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-banner div {
+  flex: 0 0 90%;
+}
+
+.hero-banner h2 {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+}
+
+.page-wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--tertiary);
+  font-size: 4vw;
+  line-height: 1.1;
+  color: var(--tertiary);
+}
+
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+/* feature first portfolio item */
+.flex-item:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  color: var(--tertiary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(
+    270deg,
+    var(--primary) 0%,
+    var(--primary) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.contact address a:hover {
+  background-size: 100% 88%;
+  color: var(--light);
+}
+
+/* portfolio project images */
+/* TODO: Add portfolio project images here using background images*/
+.run-buddy {
+  background: url("./images/pastel-boliviainteligente-fgFeYQc4Wec-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.led-wall {
+  background: url("./images/led-boliviainteligente-JHPI4yQWYSY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.react-calc {
+  background: url("./images/calc-boliviainteligente-Ze0Acs_Z-1M-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.pastel-puzzles {
+  background: url("./images/css-maxim-berg-3E2xgrlNXq4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.surf-report {
+  background: url("./images/surf-boliviainteligente--uxO-NqszGE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* media queries */
+
+/* media queries for a max-width of 980px */
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 100%;
+  }
+
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+
+/* TODO: add media query for a max-width of 768px */
+@media screen and (max-width: 768px) {
+  .flex-item:first-child {
+    min-height: 200px;
+    flex-basis: 100%;
+  }
+  .flex-item {
+    flex-basis: 100%;
+    min-height: 200px;
+  }
 }

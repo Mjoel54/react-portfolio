@@ -1,4 +1,3 @@
-import React from 'react';
 import resume from '../public/KLEIN Mitchell - CV - Portfolio.pdf';
 
 export default function Resume() {
@@ -17,8 +16,8 @@ export default function Resume() {
 
         <a
           href={resume} // Path to your PDF in the `public` folder
-          download="KLEIN - CV" // Optional: Customize the downloaded file name
-          className="btn btn-primary mt-3"
+          download="KLEIN - CV" // Downloaded file name
+          className="btn btn-primary m-4 md"
         >
           Check out my resume!
         </a>
