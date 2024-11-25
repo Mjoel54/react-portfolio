@@ -1,4 +1,5 @@
 import "./App.css";
+import githubBlack from "./assets/images/github-black.png";
 
 export default function Portfolio() {
   return (
@@ -7,7 +8,21 @@ export default function Portfolio() {
         <section id="projects" className="page-section">
           <h2>Projects</h2>
           <div className="flex-container">
-            <div className="flex-item pastel-puzzles">
+          <div className="flex-item react-portfolio">
+              <div>
+   
+                  <h3>React Portfolio</h3>
+          
+                <p>React</p>
+                <a href="https://github.com/Mjoel54/react-portfolio" target="_blank">
+                  <img
+                    src={githubBlack}
+                    style={{ height: "1.5rem", padding: "0" }}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="flex-item plant-app">
               <div>
                 <a
                   href="https://mjoel54.github.io/plant-app/index.html"
@@ -18,14 +33,14 @@ export default function Portfolio() {
                 <p>Javascript, Bootsrap</p>
                 <a href="https://github.com/Mjoel54/plant-app" target="_blank">
                   <img
-                    src="../public/github-mark.png"
+                    src={githubBlack}
                     style={{ height: "1.5rem", padding: "0" }}
                   />
                 </a>
               </div>
             </div>
 
-            <div className="flex-item run-buddy">
+            <div className="flex-item readme-generator">
               <div>
                 <h3>Readme Generator</h3>
                 <p>Node JS</p>
@@ -34,14 +49,14 @@ export default function Portfolio() {
                   target="_blank"
                 >
                   <img
-                    src="../public/github-mark.png"
+                    src={githubBlack}
                     style={{ height: "1.5rem", padding: "0" }}
                   />
                 </a>
               </div>
             </div>
 
-            <div className="flex-item react-calc">
+            <div className="flex-item employee-tracker">
               <div>
                 <h3>Employee Tracker</h3>
 
@@ -51,7 +66,7 @@ export default function Portfolio() {
                   target="_blank"
                 >
                   <img
-                    src="../public/github-mark.png"
+                    src={githubBlack}
                     style={{ height: "1.5rem", padding: "0" }}
                   />
                 </a>
