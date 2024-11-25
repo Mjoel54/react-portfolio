@@ -1,4 +1,4 @@
-import resume from '../public/KLEIN Mitchell - CV - Portfolio.pdf';
+import resume from './assets/files/KLEIN Mitchell - CV - Portfolio.pdf';
 
 export default function Resume() {
   let proficiencyList = [
