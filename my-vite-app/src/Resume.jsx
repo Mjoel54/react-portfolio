@@ -7,8 +7,9 @@ export default function Resume() {
 
 
     return (
-      <main>
+      <main className="py-5 px-4">
         <h2>Resume</h2>
+        <hr />
      <h3>Proficiencies</h3>
      <ul>
       {proficiencyList.map((element, index) => <li key={index}>{element}</li>)}
