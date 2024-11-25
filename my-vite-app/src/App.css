@@ -22,24 +22,19 @@
 }
 
 header {
-  width: 100%; /* Full width of the page */
-  position: fixed; /* Keeps the header fixed at the top */
-  top: 0; /* Positions the header at the top */
-  left: 0; /* Ensures it starts from the left edge */
   background-color: var(--primary); /* Example background color */
   color: white; /* Example text color */
-  /* padding: 10px 20px; Optional padding for aesthetics */
   z-index: 1000; /* Ensures the header is above other content */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
-  height: var(--header-height);
+}
+
+main {
+  margin-top: 7rem;
+  background-color: var(--light);
 }
 
 #aboutMe ul {
   text-align: left;
-}
-
-main {
-  margin-top: var(--header-height);
 }
 
 #aboutMe {
@@ -53,9 +48,6 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 0 30px 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
 
 footer div {
@@ -64,20 +56,6 @@ footer div {
 }
 
 /* ------------ Portfolio Styling ------------ */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: var(--primary);
-  background-color: var(--light);
-  line-height: 1.5;
-}
-
-main {
-  margin-bottom: 45px;
-}
 
 .page-wrapper {
   max-width: 88%;
@@ -120,7 +98,6 @@ main {
 }
 
 .flex-item {
-  border: 5px solid var(--secondary);
   background-color: var(--primary);
   color: var(--tertiary);
   min-height: 150px;
@@ -148,7 +125,7 @@ main {
 }
 
 .flex-item div {
-  background-color: var(--secondary);
+  background-color: white;
   padding: 8px 10px;
 }
 

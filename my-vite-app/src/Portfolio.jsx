@@ -3,7 +3,7 @@ import githubBlack from "./assets/images/github-black.png";
 
 export default function Portfolio() {
   return (
-    <main>
+    <main className="container-fluid p-5">
       <section id="about-me" className="page-wrapper">
         <section id="projects" className="page-section">
           <h2>Projects</h2>

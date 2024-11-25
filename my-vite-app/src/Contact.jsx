@@ -41,7 +41,7 @@ export default function Contact() {
   };
 
   return (
-    <main className="container pt-5">
+    <main className="pt-5 pb-5">
       <div className="row justify-content-center">
         <div className="col-md-8 col-lg-6">
           
