@@ -14,7 +14,7 @@ export default function Navbar() {
   }, [location]); // Runs whenever the `location` changes
 
   return (
-    <nav className="custom-link mt-3 mb-3">
+    <nav className="custom-link mt-3 mb-3 px-4">
       <ButtonGroup aria-label="Basic example">
         <Button
           variant="secondary"
