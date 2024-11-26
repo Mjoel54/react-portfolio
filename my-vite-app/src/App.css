@@ -13,6 +13,7 @@
   --accent: #f08700;
   --header-height: 100px;
   width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -161,23 +162,6 @@ footer {
 
 /* media queries for a max-width of 980px */
 @media screen and (max-width: 980px) {
-  header {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align: center;
-  }
-
-  header h1 {
-    width: 80%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 10vw;
-  }
-
-  header nav {
-    justify-content: center;
-  }
-
   .page-section > h2,
   .page-section > div {
     flex: 0 0 100%;
