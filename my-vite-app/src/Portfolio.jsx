@@ -6,7 +6,7 @@ export default function Portfolio() {
     <main className="container-fluid p-5">
       <section id="about-me" className="page-wrapper">
         <section id="projects" className="page-section">
-          <h2>Projects</h2>
+          <h2 className="h2">Projects</h2>
           <div className="flex-container">
           <div className="flex-item react-portfolio">
               <div>

@@ -46,7 +46,7 @@ export default function Contact() {
         <div className="col-md-8 col-lg-6">
           
           <form id="contact-form" method="post" action="" className="bg-light p-4 shadow rounded">
-          <h2 className="text-center mb-4">Contact Me</h2>
+          <h2 className="text-center mb-4 h2">Contact Me</h2>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
                 Name:
