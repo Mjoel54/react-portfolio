@@ -9,13 +9,13 @@ export default function Footer() {
           <a href="https://github.com/Mjoel54" target="_blank" className="mx-2">
             <img
               src={githubWhite}
-              style={{ height: "2rem", padding: "0" }}
+              style={{ height: "2.5rem", padding: "0" }}
             />
           </a>
           <a href="https://www.linkedin.com/in/mitchell-k-598591247/" target="_blank" className="mx-2">
             <img
               src={linkedInWhite}
-              style={{ height: "2rem", padding: "0" }}
+              style={{ height: "2.5rem", padding: "0" }}
             />
           </a>
         </div>

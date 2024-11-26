@@ -12,15 +12,15 @@ export default function AboutMe() {
             className="img-fluid"
           />
         </aside>
-        <section className="col-md-7 py-2 px-4">
-          <h2>About Me</h2>
-          <p>
+        <section className="col-md-7 py-2 px-4 text-center text-md-start">
+          <h2 className="h2">About Me</h2>
+          <p className="lead fw-normal">
             <em>Future</em> web developer with expertise in HTML, CSS,
             JavaScript, and React, along with a developing understanding of
             TypeScript.
           </p>
           <hr />
-          <h3>Areas of interest</h3>
+          <h2 className="h2">Areas of interest</h2>
           <p>
             <strong>Website development for small businesses:</strong> Helping
             small businesses establish a strong online presence through

@@ -8,20 +8,22 @@ export default function Resume() {
 
     return (
       <main className="py-5 px-4">
-        <h2>Resume</h2>
-        <hr />
-     <h3>Proficiencies</h3>
-     <ul>
-      {proficiencyList.map((element, index) => <li key={index}>{element}</li>)}
-     </ul>
-
+        <div className="text-center">
+        <h2 className="h2 mt-4">Resume</h2>
         <a
           href={resume} // Path to your PDF in the `public` folder
           download="KLEIN - CV" // Downloaded file name
-          className="btn btn-primary m-4 md"
+          className="btn btn-dark m-4 md"
         >
           Check out my resume!
-        </a>
+        </a></div>
+        <hr />
+     <h3>Proficiencies</h3>
+     <ul>
+      {proficiencyList.map((element, index) => <li key={index} className="text-decoration-none">{element}</li>)}
+     </ul>
+
+
       </main>
     );
   }
