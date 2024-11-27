@@ -1,5 +1,4 @@
 :root {
-  /* --primary: #08032d; */
   --secondary: #dda15e;
   --tertiary: #08032d;
   --dark: #08032d;
@@ -26,21 +25,10 @@
 
 header {
   background-color: var(--primary); /* Example background color */
-  z-index: 1000; /* Ensures the header is above other content */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
 }
 
 main {
   margin-top: 7rem;
-}
-
-#aboutMe ul {
-  text-align: left;
-}
-
-#aboutMe {
-  text-align: left;
-  background-color: var(--light);
 }
 
 footer {

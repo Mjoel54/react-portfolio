@@ -41,8 +41,8 @@ export default function Contact() {
   };
 
   return (
-    <main className="pt-5 pb-5">
-      <div className="row justify-content-center">
+    <main className="py-5 px-4">
+      <div className="row justify-content-center mt-4">
         <div className="col-md-8 col-lg-6">
           
           <form id="contact-form" method="post" action="" className="bg-light p-4 shadow rounded">
