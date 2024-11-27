@@ -1,5 +1,6 @@
 import kleinAvatar from "./assets/images/klein-avatar.png";
 
+
 export default function AboutMe() {
   return (
     <main id="aboutMe" className="container-fluid p-5">
