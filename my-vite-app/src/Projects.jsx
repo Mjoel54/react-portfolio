@@ -10,35 +10,38 @@ export default function Projects({
 }) {
   return (
     <>
-    <div className="col-12 col-md-6 col-xl-4">
+      <div className="col-12 col-md-6 col-xl-4">
         <div className="card p-0 mb-3">
-        <img src={projectImage} className="card-img-top" alt="..." style={{ maxHeight: "13rem" }}/>
-        <div className="card-body text-center">
-          {deployedLink ? (
-            <a href={deployedLink} target="_blank">
-              {" "}
+          <img
+            src={projectImage}
+            className="card-img-top"
+            alt="..."
+            style={{ maxHeight: "13rem" }}
+          />
+          <div className="card-body text-center">
+            {deployedLink ? (
+              <a className="d-block mb-2" href={deployedLink} target="_blank">
+                <h3 className="card-text">{projectName}</h3>
+              </a>
+            ) : (
               <h3 className="card-text">{projectName}</h3>
-            </a>
-          ) : (
-            <h3 className="card-text">{projectName}</h3>
-          )}
+            )}
 
-          <p>Description: {projectDescription}</p>
-         
+            <p>Description: {projectDescription}</p>
 
-          {githubLink ? (
-            <a href={githubLink} target="_blank">
-              {" "}
-              <img
-                src={githubBlack}
-                style={{ height: "2rem", padding: "0" }}
-              />{" "}
-            </a>
-          ) : (
-            <p>No Github link</p>
-          )}
+            {githubLink ? (
+              <a href={githubLink} target="_blank">
+                {" "}
+                <img
+                  src={githubBlack}
+                  style={{ height: "2rem", padding: "0" }}
+                />{" "}
+              </a>
+            ) : (
+              <p>No Github link</p>
+            )}
+          </div>
         </div>
-      </div>
       </div>
     </>
   );
